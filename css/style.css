@@ -1,0 +1,39 @@
+body{
+    background-color: cadetblue;
+}
+
+h1{
+    color: rgb(121, 18, 0);
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+h2{
+    font-style: oblique;
+}
+
+.seila{
+    display:flex;
+}
+
+#listaAnimes{
+    margin-right: 100px;
+    margin-left: 40px;
+}
+
+#meusAnimes{
+    margin-left: 40px;
+}    
+
+#video{
+    margin-left: 100px;
+}    
+
+#video2{
+    margin-left: 535px;
+}
+
+#naosei2{
+    margin-left: 20px;
+}    
+
