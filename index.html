@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <title>Animes</title> 
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
 
     <body>
         <nav>
-            <h1>Animes.com</h1>
+            <h1>Animes.com/Meus Animes</h1>
             <section id="naosei2">
             <img src="img/death.jpg" width="100px">
             <img src="img/Naruto_Uzumaki_(Parte_I_-_HD).png" width="200px">
@@ -32,35 +33,62 @@
                 <h2>Lista de Animes</h2>
 
                 <p>
-                Naruto <br>
-                Dragon Ball Super <br>
-                One Piece  <br>
-                Full Metal Alchemist <br>
-                Charlotte <br>
-                Shingeki no Kyojin <br>
-                Code Geass <br>
-                Death Note <br>
-                Pokemon <br>
-                Cowboy Bebop <br>
-                Akame ga Kill <br>
-                <p>Mostrar mais...</p>
+                <a href="https://meusanimes.com/assistir-gratis/akame-ga-kill" target="_blank">
+                Akame ga Kill <br> </a>  
+                <a href="https://meusanimes.com/assistir-gratis/angel-beats-online" target="_blank">
+                Angels Beats </a><br> 
+                <a href="https://meusanimes.com/assistir-gratis/black-lagoon" target="_blank">
+                Black Lagoon </a><br> 
+                <a href="https://meusanimes.com/assistir-anime/boruto-legendado" target="_blank">
+                Boruto <br> </a>
+                <a href="https://meusanimes.com/assistir-gratis/blue-gender-hd" target="_blank">
+                Blue Gender </a><br> 
+                <a href="https://meusanimes.com/assistir-gratis/charlotte" target="_blank">
+                Charlotte <br> </a>
+                <a href="https://meusanimes.com/assistir-gratis/code-geass-hangyaku-no-lelouch-online" target="_blank">
+                Code Geass <br> </a>
+                <a href="https://meusanimes.com/assistir-gratis/code-realize-sousei-no-himegimi" target="_blank">
+                Code:Realize - Sousei no Himegimi </a><br> 
+                <a href="https://meusanimes.com/assistir-gratis/cowboy-bebop" target="_blank">
+                Cowboy Bebop <br> </a> 
+                <a href="https://meusanimes.com/assistir-gratis/days" target="_blank">
+                Days </a><br>
+                <a href="https://meusanimes.com/assistir-gratis/dragon-ball-super-legendado" target="_blank">
+                Dragon Ball Super <br> </a>   
+                <a href="https://meusanimes.com/assistir-gratis/death-note" target="_blank">
+                Death Note <br> </a>                                 
+                         
                 </p>
+                <button id="btn-ver-mais" type="button" onclick="verMais()">Mostrar mais</button>
+                <button id="btn-ver-menos" onclick="verMenos()">Mostrar menos</button>
+                <p id="mostrarMais"></p>
+                
             </section>
             
             <section id="Top 10">
                 <h2>Top 10</h2>
 
                 <p>
-                1°  Naruto <br> 
-                2°  One Piece <br>
-                3°  Shingeki no Kyojin <br>
-                4°  One Punch Man <br>
-                5°  Death Note <br>
-                6°  Noragami <br>
-                7°  Boku no Hero <br>
-                8°  Samurai Jack <br>
-                9°  Boruto <br>
-                10° Samurai x
+                 1° <a href="https://meusanimes.com/assistir-anime/naruto-shippuden-episodios-legendado-online" target="_blank"> 
+                    Naruto <br> </a> 
+                 2° <a href="https://meusanimes.com/assistir-anime/one-piece-online-hd" target="_blank">
+                    One Piece <br> </a>
+                 3°<a href="https://meusanimes.com/assistir-gratis/shingeki-no-kyojin-online" target="_blank">
+                    Shingeki no Kyojin <br> </a>
+                 4° <a href="https://meusanimes.com/assistir-gratis/one-punch-man-online" target="_blank">
+                    One Punch Man <br> </a>
+                 5° <a href="https://meusanimes.com/assistir-gratis/death-note" target="_blank">
+                    Death Note <br> </a>
+                 6° <a href="https://www.superanimes.org/anime/noragami" target="_blank">
+                    Noragami <br> </a>
+                 7° <a href="https://meusanimes.com/assistir-gratis/boku-no-hero-academia-online" target="_blank">
+                    Boku no Hero <br> </a>
+                 8° <a href="https://www.superanimes.org/cartoon/samurai-jack" target="_blank">
+                    Samurai Jack <br> </a>
+                 9° <a href="https://meusanimes.com/assistir-anime/boruto-legendado" target="_blank">
+                    Boruto <br> </a>
+                 10° <a href="https://meusanimes.com/assistir-gratis/samurai-x-dublado-online" target="_blank">
+                    Samurai x </a> 
                 </p>    
             </section>
 
@@ -73,8 +101,10 @@
 
             <section id="meusAnimes">
                 <h2>Meus animes</h2>
+                     
+                
 
-                <p>Você ainda não possui nenhum anime</p>
+                <p id="meusAnimesConteudo"></p>
                   
             </section>
             
