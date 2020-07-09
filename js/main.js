@@ -53,3 +53,6 @@ function verMenos(){
    if (document.getElementById("meusAnimes") < 1) {
       document.getElementById("meusAnimesConteudo").innerHTML = "Você ainda não possui nenhum anime";
    }
+
+   
+   
