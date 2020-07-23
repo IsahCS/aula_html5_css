@@ -4,117 +4,234 @@
         <meta charset="utf-8">
         <title>Animes</title> 
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="./carousel.css">
+        <script type="text/javascript" src="/js/carousel.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     
     <body>
-        
-        <section class="transparencia"></section>
 
-        <nav>
-            <h1>Animes.com/Meus Animes</h1>
-            
-            <section id="naosei2">
-                <a id="blackClover-link" href="https://meusanimes.com/assistir-anime/black-clover-todos-os-episodios-legendado" target="_blank"></a>
-            </section>
-
-     
-            <ul>
-                <li><a href="#listadeAnimes">Lista de Animes</a></li>
-                <li><a href="#top10">Top 10</a></li>
-                <li><a href="#meusAnimes">Meus Animes</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-            </ul>
-        </nav>
-
-        <div class="seila">
-            <section id="listaAnimes" aba-target="lista ">
-                <h2>Lista de Animes</h2>
-
-                <p>
-                <a href="https://meusanimes.com/assistir-gratis/akame-ga-kill" target="_blank">
-                Akame ga Kill <br> </a>  
-                <a href="https://meusanimes.com/assistir-gratis/angel-beats-online" target="_blank">
-                Angels Beats </a><br> 
-                <a href="https://meusanimes.com/assistir-gratis/black-lagoon" target="_blank">
-                Black Lagoon </a><br> 
-                <a href="https://meusanimes.com/assistir-anime/boruto-legendado" target="_blank">
-                Boruto <br> </a>
-                <a href="https://meusanimes.com/assistir-gratis/blue-gender-hd" target="_blank">
-                Blue Gender </a><br> 
-                <a href="https://meusanimes.com/assistir-gratis/charlotte" target="_blank">
-                Charlotte <br> </a>
-                <a href="https://meusanimes.com/assistir-gratis/code-geass-hangyaku-no-lelouch-online" target="_blank">
-                Code Geass <br> </a>
-                <a href="https://meusanimes.com/assistir-gratis/code-realize-sousei-no-himegimi" target="_blank">
-                Code:Realize - Sousei no Himegimi </a><br> 
-                <a href="https://meusanimes.com/assistir-gratis/cowboy-bebop" target="_blank">
-                Cowboy Bebop <br> </a> 
-                <a href="https://meusanimes.com/assistir-gratis/days" target="_blank">
-                Days </a><br>
-                <a href="https://meusanimes.com/assistir-gratis/dragon-ball-super-legendado" target="_blank">
-                Dragon Ball Super <br> </a>   
-                <a href="https://meusanimes.com/assistir-gratis/death-note" target="_blank">
-                Death Note <br> </a>                                 
-                         
-                </p>
-                <button id="btn-ver-mais" type="button" onclick="verMais()">Mostrar mais</button>
-                <button id="btn-ver-menos" onclick="verMenos()">Mostrar menos</button>
-                <p id="mostrarMais"></p>
+        <div class="bg-fundo"></div>
+       
+        <div class="site-conteudo">
+            <nav>
+                <div class="listra">
+                    <div style="display: flex;">
+                        <input onmouseover="expandeBusca(this)" onmouseout="fechaBusca(this)" class="fechado" type="text" name="s" autocomplete="off" placeholder="Buscar" id="searchbox" value="">
+                        <div id="titulo-site" class="visivel">Animes.com/Meus Animes</div>   
+                    </div>
+                    <ul id="letras">
+                        <li><a href="#listadeAnimes">Lista de Animes</a></li>
+                        <li><a href="#top10">Top 10</a></li>
+                        <li><a href="#nomeVideo">Meus Animes</a></li>
+                        <li><a href="#nomeVideo1">Videos</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                    </ul>
+                </div>
                 
-            </section>
-            
-            <section id="Top10">
-                <h2>Top 10</h2>
+                
+                <section id="naosei2">
+                    <a id="blackClover-link" href="https://meusanimes.com/assistir-anime/black-clover-todos-os-episodios-legendado" target="_blank"></a>
+                </section>
+    
+            </nav>
 
-                <p>
-                 <a href="https://meusanimes.com/assistir-anime/naruto-shippuden-episodios-legendado-online" target="_blank"> 
-                    1° Naruto <br> </a> 
-                 <a href="https://meusanimes.com/assistir-anime/one-piece-online-hd" target="_blank">
-                    2° One Piece <br> </a>
-                 <a href="https://meusanimes.com/assistir-gratis/shingeki-no-kyojin-online" target="_blank">
-                    3° Shingeki no Kyojin <br> </a>
-                 <a href="https://meusanimes.com/assistir-gratis/one-punch-man-online" target="_blank">
-                    4° One Punch Man <br> </a>
-                 <a href="https://meusanimes.com/assistir-gratis/death-note" target="_blank">
-                    5° Death Note <br> </a>
-                 <a href="https://www.superanimes.org/anime/noragami" target="_blank">
-                    6° Noragami <br> </a>
-                 <a href="https://meusanimes.com/assistir-gratis/boku-no-hero-academia-online" target="_blank">
-                    7° Boku no Hero <br> </a>
-                 <a href="https://www.superanimes.org/cartoon/samurai-jack" target="_blank">
-                    8° Samurai Jack <br> </a>
-                 <a href="https://meusanimes.com/assistir-anime/boruto-legendado" target="_blank">
-                    9° Boruto <br> </a>
-                 <a href="https://meusanimes.com/assistir-gratis/samurai-x-dublado-online" target="_blank">
-                    10°Samurai x </a> 
-                </p>    
+            <div><p id="meusAnimesConteudo"></p></div>
+            <div class="seila">
+                <section id="listaAnimes" aba-target="lista ">
+                    <h2>Lista de Animes</h2>
+
+                    <p>
+                    <a href="https://meusanimes.com/assistir-gratis/akame-ga-kill" target="_blank">
+                    Akame ga Kill <br> </a>  
+                    <a href="https://meusanimes.com/assistir-gratis/angel-beats-online" target="_blank">
+                    Angels Beats </a><br> 
+                    <a href="https://meusanimes.com/assistir-gratis/black-lagoon" target="_blank">
+                    Black Lagoon </a><br> 
+                    <a href="https://meusanimes.com/assistir-anime/boruto-legendado" target="_blank">
+                    Boruto <br> </a>
+                    <a href="https://meusanimes.com/assistir-gratis/blue-gender-hd" target="_blank">
+                    Blue Gender </a><br> 
+                    <a href="https://meusanimes.com/assistir-gratis/charlotte" target="_blank">
+                    Charlotte <br> </a>
+                    <a href="https://meusanimes.com/assistir-gratis/code-geass-hangyaku-no-lelouch-online" target="_blank">
+                    Code Geass <br> </a>
+                    <a href="https://meusanimes.com/assistir-gratis/code-realize-sousei-no-himegimi" target="_blank">
+                    Code:Realize - Sousei no Himegimi </a><br> 
+                    <a href="https://meusanimes.com/assistir-gratis/cowboy-bebop" target="_blank">
+                    Cowboy Bebop <br> </a> 
+                    <a href="https://meusanimes.com/assistir-gratis/days" target="_blank">
+                    Days </a><br>
+                    <a href="https://meusanimes.com/assistir-gratis/dragon-ball-super-legendado" target="_blank">
+                    Dragon Ball Super <br> </a>   
+                    <a href="https://meusanimes.com/assistir-gratis/death-note" target="_blank">
+                    Death Note <br> </a>                                 
+                            
+                    </p>
+                     <p id="mostrarMais"></p>
+                    <button id="btn-ver-mais" type="button" onclick="verMais()">Mostrar mais</button>
+                    <button id="btn-ver-menos" onclick="verMenos()">Mostrar menos</button>
+                    
+                </section>
+                
+                <section id="top10">
+                    <h2>Top 10</h2>
+
+                    <p>
+                    <a href="https://meusanimes.com/assistir-anime/naruto-shippuden-episodios-legendado-online" target="_blank"> 
+                        1° Naruto <br> </a> 
+                    <a href="https://meusanimes.com/assistir-anime/one-piece-online-hd" target="_blank">
+                        2° One Piece <br> </a>
+                    <a href="https://meusanimes.com/assistir-gratis/shingeki-no-kyojin-online" target="_blank">
+                        3° Shingeki no Kyojin <br> </a>
+                    <a href="https://meusanimes.com/assistir-gratis/one-punch-man-online" target="_blank">
+                        4° One Punch Man <br> </a>
+                    <a href="https://meusanimes.com/assistir-gratis/death-note" target="_blank">
+                        5° Death Note <br> </a>
+                    <a href="https://www.superanimes.org/anime/noragami" target="_blank">
+                        6° Noragami <br> </a>
+                    <a href="https://meusanimes.com/assistir-gratis/boku-no-hero-academia-online" target="_blank">
+                        7° Boku no Hero <br> </a>
+                    <a href="https://www.superanimes.org/cartoon/samurai-jack" target="_blank">
+                        8° Samurai Jack <br> </a>
+                    <a href="https://meusanimes.com/assistir-anime/boruto-legendado" target="_blank">
+                        9° Boruto <br> </a>
+                    <a href="https://meusanimes.com/assistir-gratis/samurai-x-dublado-online" target="_blank">
+                        10°Samurai x </a> 
+                    </p>    
+                </section>
+
+                <section id="video">
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/FJb_4oZWTMQ" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </section>
+            </div> 
+                    
             </section>
 
-            <section id="video">
-                <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/FJb_4oZWTMQ" 
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-            </section>
-        </div> 
+            <p id="meusAnimesConteudo2"></p>
 
-            <section id="meusAnimes">
-                <h2>Meus animes</h2>
+            <div id="nomeVideo"><h2>Meu Animes</h2></div>
+            <div id="blocos-videos">
+                <div id="blocos-organizados">
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/acesse/naruto-shippuden-episodios-hd" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-naruto-shippuden-todos-os-episodios-legendado-hd-meus-animes-online.jpg" 
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-naruto-shippuden-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class="info">Naruto Shippuden</div>
+                            <div class="shadow"></div>
+                        </a>
+                    </div>
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/assistir-gratis/shingeki-no-kyojin-online" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-shingeki-no-kyojin-todos-os-episodios-legendado-hd-meus-animes-online.jpg" 
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-shingeki-no-kyojin-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class="info">Shingeki no Kyojin</div>
+                            <div class="shadow"></div>
+                        </a>
+                    </div>
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/assistir-gratis/nanatsu-no-taizai-online" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-nanatsu-no-taizai-todos-os-episodios-legendado-hd-meus-animes-online.jpg" 
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-nanatsu-no-taizai-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class="info">Nanatsu no Taizai</div>
+                            <div class="shadow"></div>
+                        </a>
+                    </div>
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/animes/dragon-ball-super-legendado" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-dragon-ball-super-todos-os-episodios-legendado-hd-meus-animes-online.jpg" 
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-dragon-ball-super-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class=" info">Dragon Ball Super</div>
+                            <div class="shadow"></div>
+                        </a>
+                    </div>
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/assistir-gratis/koi-to-producer-evolxlove-episodios-hd" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-koi-to-producer-evolxlove-todos-os-episodios-legendado-hd-meus-animes-online.jpg" 
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-koi-to-producer-evolxlove-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class="info">Koi to Producer: EVolxLove</div>
+                            <div class="shadow"></div>
+                        </a>
+                    </div>
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/assistir-gratis/shadowverse" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-shadowverse-todos-os-episodios-legendado-hd-meus-animes-online.jpg"
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-shadowverse-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class="info">Shadowverse</div>
+                            <div class="shadow"></div>
+                        </a>
+                    </div>
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/assistir-gratis/rezero-kara-hajimeru-isekai-seikatsu-2-episodios-hd" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-rezero-kara-hajimeru-isekai-seikatsu-2-todos-os-episodios-legendado-hd-meus-animes-online.jpg" 
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-rezero-kara-hajimeru-isekai-seikatsu-2-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class="info">RE: Zero Kara Hajimeru Isekai Seikatsu 2</div>
+                            <div class="shadow"></div>
+                        </a>
+                    </div>
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/assistir-gratis/gibiate-episodios-hd" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-gibiate-todos-os-episodios-legendado-hd-meus-animes-online.jpg" 
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-gibiate-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class="info">Gibiate</div>
+                            <div class="shadow"></div>
+                        </a>
+                    </div>
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/assistir-gratis/ahiru-no-sora" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-ahiru-no-sora-todos-os-episodios-legendado-hd-meus-animes-online.jpg" 
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-ahiru-no-sora-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class="info">Ahiru no Sora</div>
+                            <div class="shadow"></div>
+                        </a>
+                    </div>
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/assistir-gratis/muhyo-to-rouji-no-mahouritsu-soudan-jimusho-2-episodios-hd" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-muhyo-to-rouji-no-mahouritsu-soudan-jimusho-2-todos-os-episodios-legendado-hd-meus-animes-online.jpg" 
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-muhyo-to-rouji-no-mahouritsu-soudan-jimusho-2-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class="info">Muhyo to Rouji no Mahouritsu Soudan Jimusho 2</div>
+                            <div class="shadow"></div>
+                        </a>
+                    </div>
+                    <div class="blocos">
+                        <a href="https://meusanimes.com/assistir-gratis/deca-dence-episodios-hd" target="_blank"><img loading="lazy" src="https://meusanimes.com/animes/capas/assistir-deca-dence-todos-os-episodios-legendado-hd-meus-animes-online.jpg"
+                            data-lazy-src="https://meusanimes.com/animes/capas/assistir-deca-dence-todos-os-episodios-legendado-hd-meus-animes-online.jpg" class="lazyloaded" data-was-processed="true">
+                            <div class="info">Deca Dence</div>
+                            <div class="shadow"></div>
+                        </a>    
+                    </div>
+                </div>
+            </div>
 
-                <p id="meusAnimesConteudo"></p>
-                  
-            </section>
-            
-            <section id="video2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/S8_YwFLCh4U" frameborder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
+            <p id="meusAnimesConteudo3"></p>                
 
+            <div id="nomeVideo1"><h2>Videos</h2></div>
+            <div id="cheers-videos">
+                <div id="cheers">
+                    <div class="item"><iframe width="914" height="514" src="https://www.youtube.com/embed/Qyonn5Vbg7s" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="item"><iframe width="914" height="514" src="https://www.youtube.com/embed/NLnYhnoDjVs" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="item"><iframe width="914" height="514" src="https://www.youtube.com/embed/4X4ALSswdDI" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="item"><iframe width="560" height="315" src="https://www.youtube.com/embed/S8_YwFLCh4U" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="item"><iframe width="560" height="315" src="https://www.youtube.com/embed/-wPC3AZYJsA" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="item"><iframe width="560" height="315" src="https://www.youtube.com/embed/c2S2CfQLgYo" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="item"><iframe width="1499" height="561" src="https://www.youtube.com/embed/o8Uvtc1Lp1I" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="item"><iframe width="1499" height="561" src="https://www.youtube.com/embed/ES50gww_MHo" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> 
+                    <div class="item"><iframe width="1499" height="561" src="https://www.youtube.com/embed/ITNqVYll2oA" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="item"><iframe width="914" height="514" src="https://www.youtube.com/embed/FM0CfqL9PHY" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="item"><iframe width="914" height="514" src="https://www.youtube.com/embed/dqDB6gQLbPM" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+            </div>
+
+            <p id="meusAnimesConteudo4"></p>
+        
             <footer>
                 <section id="contatos">
                     <h2>Contatos</h2>
-                    <img src="img/cc86a9f4ca65a140b2edadf3f87f2c17-design-de---cone-de-c--rculo-de-e-mail-by-vexels (1).png" width="35px">
                     <p><a href="mailto:isabelcordeiro1230@gmail.com">isabelcordeiro1230@gmail.com</a></p>
                     <p><a href="tel:(21)966875452">(21)966875452</a></p>
                 </section>         
@@ -126,7 +243,7 @@
                     
                 </section>
             </footer>
-                      
+        </div>              
     </body>
 
 
